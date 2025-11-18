@@ -162,6 +162,7 @@ public class QuizManager : MonoBehaviour
     void ShowQuizComplete()
     {
         questionText.text = $"Quiz Selesai!\n\nScore: {score}/{questions.Length * pointsPerCorrectAnswer}";
+        ShowFilter(correctFilterPrefab);
         DisableButtons();
     }
 
